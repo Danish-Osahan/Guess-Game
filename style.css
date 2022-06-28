@@ -1,0 +1,91 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Jua", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  background-repeat: no-repeat;
+}
+.container {
+  width: 442px;
+  background-color: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000090,
+    -3px -3px 10px #ffffff, 3px 3px 10px #00000090;
+}
+.container h2 {
+  font-size: 30px;
+  padding: 0.5em 1em;
+  border-bottom: 2px solid rgb(181, 179, 179);
+  background: #01baef;
+  background: linear-gradient(to right, #01baef 0%, #20bf55 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .content {
+  margin: 1.8rem 1.8rem;
+}
+.container .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content .typing-input{
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputs input {
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  border-radius: 5px;
+  box-shadow: inset -3px -3px 5px #ffffff, inset 3px 3px 5px #00000090,
+    -3px -3px 5px #ffffff, 3px 3px 5px #00000090;
+  font-weight: 700;
+  font-size: 30px;
+  color: #20bf55;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.inputs input:first-child {
+  margin-left: 0px;
+}
+
+.content .details {
+  margin: 1.5rem 0rem;
+}
+
+.details p {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.details .wrong-letters span{
+  text-transform: uppercase;
+}
+.content .reset-btn {
+  margin-top: 2rem;
+  width: 100%;
+  cursor: pointer;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  font-size: 17px;
+  padding: 0.5rem 9rem;
+  border-radius: 6px;
+  box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000090,
+    -3px -3px 10px #ffffff, 3px 3px 10px #00000090;
+}
+.content .reset-btn:hover{
+  box-shadow: -3px -3px 20px #ffffff20, 3px 3px 20px #00000090,
+    -3px -3px 20px #ffffff20, 3px 3px 20px #00000090;
+}
+
